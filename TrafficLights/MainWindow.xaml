@@ -1,0 +1,20 @@
+﻿<Window x:Class="TrafficLights.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrafficLights"
+        mc:Ignorable="d"
+        Title="Traffic Lights" Height="520" Width="400" ResizeMode="NoResize">
+    <Canvas>
+        <Image Height="450" Canvas.Left="20" Canvas.Top="10" Source="/lights-background.png" />
+        <Image Name="imgGreen" Height="450" Canvas.Left="20" Canvas.Top="10" Source="/lights-green.png" />
+        <Image Name="imgAmber" Height="450" Canvas.Left="20" Canvas.Top="10" Source="/lights-amber.png" />
+        <Image Name="imgRed" Height="450" Canvas.Left="20" Canvas.Top="10" Source="/lights-red.png" />
+        <Image Height="250" Source="/Pedestrians-background.png" Canvas.Left="158" Canvas.Top="50"></Image>
+        <Image Name="imgRedFigure" Height="250" Source="/Pedestrians-red.png" Canvas.Left="158" Canvas.Top="50"></Image>
+        <Image Name="imgGreenFigure" Height="250" Source="/Pedestrians-green.png" Canvas.Left="158" Canvas.Top="50"></Image>
+        <Image Name="imgWaitOff" Width="150" Source="/Wait-off.png" Canvas.Left="208" Canvas.Top="350" MouseDown="WaitClick" Cursor="Hand"></Image>
+        <Image Name="imgWait" Width="150" Source="/Wait.png" Canvas.Left="208" Canvas.Top="350"  MouseDown="WaitClick" Cursor="Hand"></Image>
+    </Canvas>
+</Window>

@@ -1,0 +1,106 @@
+[
+  {
+    "CurrentState": "GoIdle",
+    "Action": "Press",
+    "NextState": "GoWaiting",
+    "Timeout": 2000,
+    "LightsOn": [
+      "Green",
+      "RedFigure",
+      "Wait"
+    ],
+    "LightsFlashing": []
+  },
+  {
+    "CurrentState": "PrepareToStart",
+    "Action": "Press",
+    "NextState": "Rerequest",
+    "Timeout": null,
+    "LightsOn": [
+      "Wait"
+    ],
+    "LightsFlashing": [
+      "Amber",
+      "GreenFigure"
+    ]
+  },
+  {
+    "CurrentState": "GoWaiting",
+    "Action": "Timeout",
+    "NextState": "PrepareToStop",
+    "Timeout": 2000,
+    "LightsOn": [
+      "Amber",
+      "RedFigure",
+      "Wait"
+    ],
+    "LightsFlashing": []
+  },
+  {
+    "CurrentState": "PrepareToStop",
+    "Action": "Timeout",
+    "NextState": "Stop",
+    "Timeout": 4000,
+    "LightsOn": [
+      "Red",
+      "GreenFigure"
+    ],
+    "LightsFlashing": []
+  },
+  {
+    "CurrentState": "Stop",
+    "Action": "Timeout",
+    "NextState": "PrepareToStart",
+    "Timeout": 4000,
+    "LightsOn": [],
+    "LightsFlashing": [
+      "GreenFigure",
+      "Amber"
+    ]
+  },
+  {
+    "CurrentState": "PrepareToStart",
+    "Action": "Timeout",
+    "NextState": "GoIdle",
+    "Timeout": null,
+    "LightsOn": [
+      "Green",
+      "RedFigure"
+    ],
+    "LightsFlashing": []
+  },
+  {
+    "CurrentState": "Rerequest",
+    "Action": "Timeout",
+    "NextState": "GoWaiting",
+    "Timeout": 2000,
+    "LightsOn": [
+      "Green",
+      "RedFigure",
+      "Wait"
+    ],
+    "LightsFlashing": []
+  }
+  //
+  // Extra states only work without enums
+  //
+  //,{
+  //  "CurrentState": "Stop",
+  //  "Action": "Press",
+  //  "NextState": "SecretState",
+  //  "Timeout": 5000,
+  //  "LightsOn": [ "RedFigure", "GreenFigure" ],
+  //  "LightsFlashing": [
+  //    "Red",
+  //    "Green"
+  //  ]
+  //},
+  //{
+  //  "CurrentState": "SecretState",
+  //  "Action": "Timeout",
+  //  "NextState": "GoIdle",
+  //  "Timeout": null,
+  //  "LightsOn": [ "RedFigure", "Green" ],
+  //  "LightsFlashing": []
+  //}
+]

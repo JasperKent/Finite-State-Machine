@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\lights-amber.png" />
+    <None Remove="Images\lights-background.png" />
+    <None Remove="Images\lights-green.png" />
+    <None Remove="Images\lights-red.png" />
+    <None Remove="Images\Pedestrians-background.png" />
+    <None Remove="Images\Pedestrians-green.png" />
+    <None Remove="Images\Pedestrians-red.png" />
+    <None Remove="Images\Wait-off.png" />
+    <None Remove="Images\Wait.png" />
+    <None Remove="lights-amber.png" />
+    <None Remove="lights-background.png" />
+    <None Remove="lights-green.png" />
+    <None Remove="lights-red.png" />
+    <None Remove="Pedestrians-background.png" />
+    <None Remove="Pedestrians-green.png" />
+    <None Remove="Pedestrians-red.png" />
+    <None Remove="Wait-off.png" />
+    <None Remove="Wait.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\lights-amber.png" />
+    <Resource Include="Images\lights-background.png" />
+    <Resource Include="Images\lights-green.png" />
+    <Resource Include="Images\lights-red.png" />
+    <Resource Include="Images\Pedestrians-background.png" />
+    <Resource Include="Images\Pedestrians-green.png" />
+    <Resource Include="Images\Pedestrians-red.png" />
+    <Resource Include="Images\Wait-off.png" />
+    <Resource Include="Images\Wait.png" />
+    <Resource Include="lights-amber.png" />
+    <Resource Include="lights-background.png" />
+    <Resource Include="lights-green.png" />
+    <Resource Include="lights-red.png" />
+    <Resource Include="Pedestrians-background.png" />
+    <Resource Include="Pedestrians-green.png" />
+    <Resource Include="Pedestrians-red.png" />
+    <Resource Include="Wait-off.png" />
+    <Resource Include="Wait.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="machine.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
